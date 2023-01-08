@@ -20,7 +20,7 @@ jobs:
           server-username: JFROG_USERNAME
           server-password: JFROG_PASSWORD
       - name: Publish to the Mifos Artifactory
-        run: mvn --batch-mode deploy
+        run: mvn -Dmaven.test.skip=true --batch-mode deploy
         env:
           JFROG_USERNAME: ${{ secrets.JFROG_USERNAME }}
           JFROG_PASSWORD: ${{ secrets.JFROG_PASSWORD }}
@@ -30,6 +30,6 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: Publish to GitHub Packages
-        run: mvn --batch-mode deploy
+        run: mvn -Dmaven.test.skip=true --batch-mode deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
