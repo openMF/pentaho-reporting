@@ -2808,11 +2808,6 @@
       <name>Mifos Artifactory</name>
       <url>https://mifos.jfrog.io/artifactory/libs-snapshot-local/</url>
     </repository>
-    <repository>
-      <id>github</id>
-      <name>GitHub Packages</name>
-      <url>https://maven.pkg.github.com/fintecheando/pentaho-reporting</url>
-    </repository>
   </distributionManagement>
 
 </project>
