@@ -292,6 +292,3 @@ response times. Please see
   http://www.pentaho.com/products/reporting/
 
 for more details.
-
-
-
