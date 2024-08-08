@@ -20,7 +20,7 @@ jobs:
           server-username: JFROG_USERNAME
           server-password: JFROG_PASSWORD
       - name: Publish to the Mifos Artifactory
-        run: mvn -Dmaven.test.skip=true --batch-mode deploy
+        run: mvn -Dmaven.test.skip=true --batch-mode clean install -Drelease deploy
         env:
           JFROG_USERNAME: ${{ secrets.JFROG_USERNAME }}
           JFROG_PASSWORD: ${{ secrets.JFROG_PASSWORD }}
