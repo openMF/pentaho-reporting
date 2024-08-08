@@ -2663,6 +2663,10 @@
         <updatePolicy>interval:15</updatePolicy>
       </snapshots>
     </repository>
+    <repository>
+      <id>clojars.org</id>
+      <url>https://clojars.org/repo</url>
+    </repository>  
   </repositories>
 
   <pluginRepositories>
@@ -2678,6 +2682,15 @@
       </releases>
     </pluginRepository>
   </pluginRepositories>
+
+  <distributionManagement>
+    <repository>
+      <id>central</id>
+      <name>Mifos Artifactory</name>
+      <url>https://mifos.jfrog.io/artifactory/libs-snapshot-local/</url>
+    </repository>
+  </distributionManagement>
+
 
 
 </project>
