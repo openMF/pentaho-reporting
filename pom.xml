@@ -2662,11 +2662,7 @@
         <enabled>true</enabled>
         <updatePolicy>interval:15</updatePolicy>
       </snapshots>
-    </repository>
-    <repository>
-      <id>clojars.org</id>
-      <url>https://clojars.org/repo</url>
-    </repository>  
+    </repository>   
   </repositories>
 
   <pluginRepositories>
