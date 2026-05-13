@@ -2,7 +2,7 @@ name: Publish package to the Mifos Artifactory and GitHub Packages
 on:
   push:
     branches:
-      - upgrade_apache_poi
+      - master
 jobs:
   publish:
     runs-on: ubuntu-latest 
